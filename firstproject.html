@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Table</title>
+        <style>
+            #container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            #container > div {
+                background-color: orange;
+                font-size: 20px;
+                margin: 20px;
+                padding: 20px;
+                width:100px;
+
+            }
+            @media (min-width: 500px) {
+                body {
+                    background-color :yellow;
+                }
+            }
+            @media (max-width: 450px) {
+                body {
+                    background-color: grey;
+                }
+            }
+
+        table{
+            border : 4px solid black;
+            border-collapse: collapse;   
+        }
+        td,th{
+            border: 3px solid red;
+            padding: 5px;
+        }
+        #container  {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #container > div {
+            background-color: brown;
+            font-size: 25px;
+            margin: 20px;
+            width:200px;
+        }
+        #grid {
+            background-color: green;
+            display: grid;
+            padding: 25px;
+            grid-column-gap: 25px;
+            grid-row-gap: 15px;
+            grid-template-columns: 200px 200px auto;
+        }
+        .grid-item{
+            background-color: bisque;
+            font-size: 20px;
+            padding:20px;
+            text-align: center;
+        }
+      
+            </style>
+    </head>
+    <body>
+        <div id="container">
+           <div>1.A season is a period of the year</div>
+           <div>2.It is distinguioshed by special climate conditions</div>
+           <div>3.The four seasons are spring,summer,fall and winter</div>
+           <div>4.Winter is the coldest season,with short days</div>
+           <div>5.Summer is the hottest season and has long sunny days</div>
+       </div>
+        <h1 style="text-align: center;">My web page</h1>
+        Hello, world!
+    <table>
+        <thead>
+            <th style="color:green;">season</th>
+            <th style="color:purple;">month</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="color:blue">summer</td>
+                <td style="color:blue">March to May</td>
+            </tr>
+            <tr>
+                    <td style="color:blue">winter</td>
+                    <td style="color:blue">December to february</td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <img src="season1.jpeg" alt="image" width="300">
+    </div>
+    an ordered list:
+    <ol>
+        <li>first season</li>
+        <li>second season</li>
+    </ol>
+    <ul>
+        <li>humid</li>
+        <li>cold</li>
+    </ul>
+    <div id="grid">
+        <div class="grid-item">humid</div>
+        <div class="grid-item">cold</div>
+        <div class="grid-item">moderate</div>
+        <div class="grid-item">sunny</div>
+        <div class="grid-item">rainy</div>
+        <div class="grid-item">windy</div>
+    </div>
+    <a href="https://google.com">Open google</a>
+    <form>
+        <input type="text" placeholder="Full name"  name="Rakshitha">
+        <input type="submit">
+        <input type="text" placeholder="Last name" name="name">
+        <input type="submit">
+    </form>
+    </body>
+</html> 
